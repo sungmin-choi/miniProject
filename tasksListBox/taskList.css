@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  background-color: #f3a683;
+}
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background-color: #596275;
+}
+.task {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  cursor: pointer;
+}
+
+.task input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.task i {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  border: 1px solid white;
+  font-size: 20px;
+  margin-right: 14px;
+  color: transparent;
+}
+
+.middle h2 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+}
+.task-list span {
+  font-size: 20px;
+  color: white;
+}
+
+.task input:checked ~ i {
+  color: #e74c3c;
+}
+.task input:checked ~ span {
+  text-decoration: line-through;
+  color: #e74c3c;
+}
